@@ -1,13 +1,13 @@
 import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MainLayout from "./layouts/mainLayout";
-import Home from "./pages/home";
-import About from "./pages/about";
-import Skills from "./pages/skills";
-import Projects from "./pages/projects";
-import Achievements from "./pages/achivement";
-import Experience from "./pages/experience";
-import Contact from "./pages/contact";
+import MainLayout from "./layouts/MainLayout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
+import Experience from "./pages/Experience";
+import Achievements from "./pages/Achievements";
+import Contact from "./pages/Contact";
 import "./App.css";
 
 // Create a dark theme with glass morphism effects
