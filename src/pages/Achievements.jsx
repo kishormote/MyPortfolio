@@ -14,7 +14,7 @@ function Achievements() {
   const achievements = [
     {
       title: "Winner, SIH 2024",
-      image: "../src/assets/SihWinner.jpg",
+      image: "/images/SihWinner.jpg",
       date: "2024",
       description:
         "Secured the first place in the Smart India Hackathon (SIH) 2024, showcasing our technical skills and collaborative spirit.",

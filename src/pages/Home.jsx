@@ -4,7 +4,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 // import LeetCodeIcon from "@mui/icons-material/Leetcode";
-import MyPhoto from "../assets/MyPhoto.jpg"; // Adjust the path as necessary
 
 function Home() {
   // Animation variants
@@ -218,7 +217,7 @@ function Home() {
             >
               <Box
                 component="img"
-                src={MyPhoto}
+                src="/images/MyPhoto.jpg"
                 alt="Profile"
                 sx={{
                   width: 300,

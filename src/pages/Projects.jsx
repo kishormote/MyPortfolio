@@ -13,7 +13,6 @@ import {
 import { motion } from "framer-motion";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
-import MyPhoto from "../assets/MyPhoto.jpg"; // Adjust the path as necessary
 
 function Projects() {
   const containerVariants = {
@@ -40,7 +39,7 @@ function Projects() {
       title: "College Hackathon Website",
       description:
         "Developed a college hackathon website for hackathon management purposes.",
-      image: "../src/assets/Magnitude.png", // Add an image for this project if available
+      image: "/images/Magnitude.png",
       technologies: [
         "React",
         "Node.js",
@@ -57,7 +56,7 @@ function Projects() {
       title: "NaamSiddhi",
       description:
         "Developed a college hackathon website to solve the Madhya Pradesh police problem.",
-      image: "../src/assets/NaamSiddhi.png", // Add an image for this project if available
+      image: "/images/NaamSiddhi.png",
       technologies: [
         "Node.js",
         "MongoDB",
@@ -74,7 +73,7 @@ function Projects() {
       title: "Expense Tracker App",
       description:
         "Developed a full-stack app to track income and expenses with visual charts. Built with Node.js and MongoDB.",
-      image: "../src/assets/ExpenseTracker.png", // Add an image for this project if available
+      image: "/images/ExpenseTracker.png",
       technologies: ["Node.js", "MongoDB", "Express", "React"],
       github: "https://github.com/kishormote/Money-Tracker-App",
       live: "https://money-tracker-app-gudu.onrender.com/", // Replace with the actual live link
@@ -84,7 +83,7 @@ function Projects() {
       title: "User Registration and Authentication",
       description:
         "Implemented secure user login with bcrypt for password hashing, and MongoDB for data storage.",
-      image: "../src/assets/Magnitude.png", // Add an image for this project if available
+      image: "/images/Magnitude.png",
       technologies: ["Node.js", "Express", "MongoDB", "Bcrypt"],
       github: "https://github.com/kishormote/REGISTRATION-FORM",
       live: "https://registration-form-beem.onrender.com", // Replace with the actual live link
@@ -94,7 +93,7 @@ function Projects() {
       title: "Biligual Language Translator",
       description:
         "A full-stack e-commerce platform with features like user authentication, product management, shopping cart, and payment integration.",
-      image: "../src/assets/Dictionary.png",
+      image: "/images/Dictionary.png",
       technologies: [
         "HTML",
         "CSS",
