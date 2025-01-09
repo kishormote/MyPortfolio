@@ -3,8 +3,11 @@ import { createRoot } from "react-dom/client";
 import emailjs from "@emailjs/browser";
 import App from "./App.jsx";
 
-// Initialize EmailJS with your public key
-emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+try {
+  emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+} catch (error) {
+  console.error("EmailJS initialization error:", error);
+}
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
