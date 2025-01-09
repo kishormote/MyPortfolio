@@ -103,7 +103,7 @@ function Footer() {
             </Box>
           </Grid>
 
-          {/* Download CV Button */}
+          {/* Update CV Download Button */}
           <Grid
             item
             xs={12}
@@ -113,9 +113,16 @@ function Footer() {
             <Button
               variant="contained"
               color="primary"
-              href="https://drive.google.com/drive/my-drive"
-              download
-              sx={{ mt: 1 }}
+              href="/files/MyResume.pdf"
+              download="MyResume.pdf"
+              sx={{
+                mt: 1,
+                background: "linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)",
+                "&:hover": {
+                  background:
+                    "linear-gradient(45deg, #1976D2 30%, #1CB5E0 90%)",
+                },
+              }}
             >
               Download My CV
             </Button>

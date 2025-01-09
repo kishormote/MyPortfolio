@@ -206,8 +206,9 @@ function Home() {
             xs={12}
             md={4}
             sx={{
-              display: { xs: "none", md: "flex" },
+              display: "flex",
               justifyContent: "center",
+              mt: { xs: 4, md: 0 },
             }}
           >
             <motion.div
@@ -220,11 +221,12 @@ function Home() {
                 src="/images/MyPhoto.jpg"
                 alt="Profile"
                 sx={{
-                  width: 300,
-                  height: 300,
+                  width: { xs: 200, md: 300 },
+                  height: { xs: 200, md: 300 },
                   borderRadius: "50%",
                   border: "4px solid rgba(6, 182, 212, 0.3)",
                   boxShadow: "0 0 20px rgba(6, 182, 212, 0.2)",
+                  objectFit: "cover",
                 }}
               />
             </motion.div>
