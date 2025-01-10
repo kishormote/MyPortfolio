@@ -30,18 +30,43 @@ function Achievements() {
   ];
 
   return (
-    <Box component="section" className="glass-section">
-      <Container>
-        <Typography variant="h3" component="h2" gutterBottom align="center">
+    <Box
+      component="section"
+      className="glass-section"
+      sx={{
+        minHeight: "100vh",
+        pt: { xs: 8, sm: 10 },
+        pb: 4,
+      }}
+    >
+      <Container maxWidth="lg">
+        <Typography
+          variant="h3"
+          component="h2"
+          gutterBottom
+          align="center"
+          sx={{
+            fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" },
+            mb: { xs: 3, sm: 4, md: 5 },
+            wordBreak: "break-word",
+            overflowWrap: "break-word",
+            hyphens: "auto",
+          }}
+        >
           Achievements
         </Typography>
-        <Grid container spacing={4} justifyContent="center">
+        <Grid
+          container
+          spacing={{ xs: 2, sm: 3, md: 4 }}
+          justifyContent="center"
+        >
           {achievements.map((achievement, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
               <Card
                 elevation={0}
                 sx={{
-                  height: "300px",
+                  height: { xs: "auto", sm: "300px" },
+                  minHeight: { xs: "300px", sm: "auto" },
                   background: "rgba(255, 255, 255, 0.05)",
                   backdropFilter: "blur(10px)",
                   border: "1px solid rgba(255, 255, 255, 0.1)",
@@ -76,7 +101,12 @@ function Achievements() {
                     variant="h6"
                     gutterBottom
                     align="center"
-                    sx={{ fontWeight: "bold" }}
+                    sx={{
+                      fontWeight: "bold",
+                      fontSize: { xs: "1.1rem", sm: "1.25rem" },
+                      lineHeight: 1.2,
+                      mb: 1,
+                    }}
                   >
                     {achievement.title}
                   </Typography>
@@ -86,6 +116,9 @@ function Achievements() {
                     align="center"
                     color="primary"
                     gutterBottom
+                    sx={{
+                      fontSize: { xs: "0.8rem", sm: "0.875rem" },
+                    }}
                   >
                     {achievement.date}
                   </Typography>
@@ -94,9 +127,9 @@ function Achievements() {
                     align="center"
                     color="text.secondary"
                     sx={{
-                      padding: "0 10px",
-                      fontSize: "0.8rem",
-                      lineHeight: 1.2,
+                      px: { xs: 1, sm: 2 },
+                      fontSize: { xs: "0.75rem", sm: "0.8rem" },
+                      lineHeight: 1.4,
                     }}
                   >
                     {achievement.description}

@@ -102,13 +102,44 @@ function Contact() {
                 Let's Connect
               </Typography>
               <Box sx={{ mb: 3 }}>
-                <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
-                  <EmailIcon sx={{ mr: 2, color: "primary.main" }} />
-                  <Typography>motekishor90@gmail.com</Typography>
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    mb: 2,
+                    flexWrap: "wrap",
+                  }}
+                >
+                  <EmailIcon
+                    sx={{ mr: 2, color: "primary.main", minWidth: 24 }}
+                  />
+                  <Typography
+                    sx={{
+                      wordBreak: "break-word",
+                      fontSize: { xs: "0.875rem", sm: "1rem" },
+                      maxWidth: "100%",
+                    }}
+                  >
+                    motekishor90@gmail.com
+                  </Typography>
                 </Box>
-                <Box sx={{ display: "flex", alignItems: "center" }}>
-                  <LocationOnIcon sx={{ mr: 2, color: "primary.main" }} />
-                  <Typography>Pune, Maharashtra, India</Typography>
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    flexWrap: "wrap",
+                  }}
+                >
+                  <LocationOnIcon
+                    sx={{ mr: 2, color: "primary.main", minWidth: 24 }}
+                  />
+                  <Typography
+                    sx={{
+                      fontSize: { xs: "0.875rem", sm: "1rem" },
+                    }}
+                  >
+                    Pune, Maharashtra, India
+                  </Typography>
                 </Box>
               </Box>
               <Typography variant="h6" gutterBottom>
